@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete - Uninassau Parangaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estimativa de Corridas 📱</h1>
+        <p>Base de saída: <strong>Uninassau Parangaba (Fortaleza/CE)</strong></p>
+        
+        <div class="input-group">
+            <input type="text" id="cep" placeholder="Digite seu CEP (00000-000)" maxlength="9">
+            <button id="calcularBtn">Calcular Valores</button>
+        </div>
+
+        <div id="loading" class="hidden">Buscando endereço e calculando rota...</div>
+        <div id="erro" class="hidden erro-texto"></div>
+
+        <div id="resultado" class="hidden">
+            <h2>Detalhes do Trajeto</h2>
+            <p><strong>Endereço:</strong> <span id="enderecoTexto"></span></p>
+            <p><strong>Distância Estimada:</strong> <span id="distanciaTexto"></span> km</p>
+            
+            <h3 class="titulo-precos">Valores Estimados</h3>
+            <div class="precos-grid">
+                <div class="preco-card moto">
+                    <span>🏍️ Moto</span>
+                    <strong id="precoMoto"></strong>
+                </div>
+                <div class="preco-card uberx">
+                    <span>🚗 UberX</span>
+                    <strong id="precoX"></strong>
+                </div>
+                <div class="preco-card comfort">
+                    <span>🚘 Comfort</span>
+                    <strong id="precoComfort"></strong>
+                </div>
+                <div class="preco-card black">
+                    <span>🚙 Black</span>
+                    <strong id="precoBlack"></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

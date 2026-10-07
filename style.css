@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+}
+
+button {
+    padding: 14px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#resultado {
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+}
+
+#resultado h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#resultado p {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 14px;
+}
+
+.titulo-precos {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* Grid de Preços */
+.precos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.preco-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.preco-card span {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+.preco-card strong {
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.moto { background-color: #e6f4ea; border: 1px solid #ceead6; }
+.uberx { background-color: #e8f0fe; border: 1px solid #d2e3fc; }
+.comfort { background-color: #fef7e0; border: 1px solid #fce8b2; }
+.black { background-color: #202124; border: 1px solid #000; color: white !important;}
+.black span, .black strong { color: white !important; }
+
+.hidden {
+    display: none !important;
+}
+
+#loading {
+    color: #1a73e8;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.erro-texto {
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-radius: 5px;
+}
